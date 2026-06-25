@@ -17,7 +17,7 @@ Jenis Pesan DHCP:
 -DHCP Release
 
 Tahap Implementasi DHCP
-![hasil](../assets/image/modul11/week11.png)
+![hasil](../assets/modul11/week11.png)
 
 Berdasarkan tangkapan layar di atas, proses diawali dengan paket Discover, di mana client mengirimkan pesan broadcast ke tujuan 255.255.255.255 dengan source 0.0.0.0 karena belum memiliki alamat IP. DHCP Server kemudian merespons dengan paket Offer untuk menawarkan alokasi IP address kepada client. Setelah menerima tawaran tersebut, client mengirimkan paket Request sebagai bentuk persetujuan atas IP yang ditawarkan. Proses penyerahan IP ini diselesaikan melalui paket ACK (Acknowledgment) yang dikirim oleh server sebagai konfirmasi akhir; setelah paket ACK ini diterima, client secara resmi mengonfigurasi dan menggunakan IP address tersebut pada sistemnya.
 

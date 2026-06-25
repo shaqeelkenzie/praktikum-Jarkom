@@ -35,31 +35,31 @@ diterima?
 Jelaskan bagaimana Anda menghitung nilai ini.
 # Jawaban :
 1.  
-![foto-1](../assets/image/modul6/6-1.png)
+![foto-1](../assets/modul6/6-1.png)
 Segmen teridentifikasi sebagai SYN karena pada jendela detail header TCP, bit bendera (Flags) menunjukkan nilai Syn: Set, yang berarti bit SYN bernilai 1 sementara bit ACK bernilai 0.
 
 ---
 
 2.
-![foto-1](../assets/image/modul6/6-2.png)
+![foto-1](../assets/modul6/6-2.png)
 Nomor urut segmen SYNACK yang dikirim oleh gaia.cs.umass.edu adalah 0. Nilai dari field Acknowledgement pada segmen SYNACK adalah 1. Gaia.cs.umass.edu menentukan nilai tersebut dengan menambahkan 1 ke nomor urut segmen SYN yang diterima dari klien, yang dalam hal ini adalah 0 + 1 = 1. Segmen teridentifikasi sebagai SYNACK karena pada jendela detail header TCP, bit bendera (Flags) menunjukkan nilai Syn: Set dan Ack: Set, yang berarti bit SYN bernilai 1 dan bit ACK bernilai 1.
 
 ---
 
 3.
-![foto-1](../assets/image/modul6/6-3.png)
+![foto-1](../assets/modul6/6-3.png)
 Nomor urut segmen TCP yang berisi perintah HTTP POST adalah 1. Anda dapat menemukan perintah POST dengan menelusuri content field milik paket di bagian bawah jendela Wireshark, kemudian mencari segmen yang berisi "POST" di bagian field DATA-nya.
 
 ---
 
 4.
-![foto-1](../assets/image/modul6/6-4.png)
+![foto-1](../assets/modul6/6-4.png)
 Segmen pertama yang berisi HTTP POST (Frame 4) memiliki nomor urut 57273 dan dikirim pada detik 1.666151. Berdasarkan data pada grafik Round Trip Time, ACK untuk segmen ini diterima sekitar 0,02648 detik kemudian, sehingga waktu penerimaan ACK adalah detik 1.692631. Lima segmen berikutnya dikirim dengan nomor urut yang bertambah sesuai panjang data masing-masing segmen (misalnya, jika segmen pertama 565 byte, maka segmen kedua dimulai pada 57838). Nilai RTT untuk enam segmen pertama ini berfluktuasi antara 26 ms hingga 195 ms sebagaimana terlihat pada plot titik biru di grafik. Dari nilai SampleRTT tersebut, diperoleh nilai EstimatedRTT secara berturut-turut untuk memperhalus estimasi waktu tunggu transmisi, dimulai dari 0.02648 detik dan meningkat seiring dengan peningkatan beban trafik pada segmen-segmen awal.
 
 ---
 
 5.
-![foto-1](../assets/image/modul6/6-5.png)
+![foto-1](../assets/modul6/6-5.png)
 Panjang Segmen TCP 
 
 - Segmen Pertama (Frame 4): Memiliki panjang sebesar 565 bytes. 
@@ -77,29 +77,29 @@ Panjang Segmen TCP
 ---
 
 6.
-![foto-1](../assets/image/modul6/6-6.png)
+![foto-1](../assets/modul6/6-6.png)
 Nilai window size menunjukkan kapasitas buffer penerima yaitu 5840 bytes. Dalam trace ini, tidak terlihat adanya indikasi bahwa kurangnya ruang buffer penerima menghambat pengiriman, karena tidak ada segmen yang ditransmisikan ulang atau adanya penurunan throughput yang signifikan.
 
 ---
 
 7.
-![foto-1](../assets/image/modul6/6-7.png)
+![foto-1](../assets/modul6/6-7.png)
 Dalam file trace ini, tidak terlihat adanya segmen yang ditransmisikan ulang.
 
 ---
 
 8.
-![foto-1](../assets/image/modul6/6-8.png)
+![foto-1](../assets/modul6/6-8.png)
 Dalam trace ini, sebagian besar ACK yang diterima mengakui sejumlah data yang cukup besar, seringkali sekitar 1460 bytes, yang menunjukkan bahwa penerima mengakui data dalam jumlah besar sekaligus. Namun, terdapat beberapa kasus di mana penerima melakukan ACK untuk setiap segmen yang diterima, terutama pada segmen-segmen awal yang memiliki panjang data lebih kecil (misalnya, segmen pertama dengan panjang 565 bytes). Hal ini dapat dilihat pada ACK yang diterima setelah segmen-segmen tersebut, di mana nilai Acknowledgement Number meningkat sesuai dengan jumlah data yang diakui
 
 ---
 
 9.
-![foto-1](../assets/image/modul6/6-9.png)
+![foto-1](../assets/modul6/6-9.png)
 Untuk menghitung throughput, kita dapat menggunakan rumus:
 Throughput = Total Data Transferred / Total Time
 
 # Congestion Control pada TCP
 
 1. 
-![foto-1](../assets/image/modul6/6-10.png)
+![foto-1](../assets/modul6/6-10.png)

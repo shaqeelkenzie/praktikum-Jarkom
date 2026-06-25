@@ -4,19 +4,19 @@
 
 Dilakukan pengujian untuk memetakan rute perjalanan paket data dari perangkat lokal menuju server gaia.cs.umass.edu[cite: 1]. Pengujian ini dilakukan menggunakan utility bawaan Windows yaitu tracert[cite: 1].
 
-![foto-1](../assets/image/modul10/10-1.png)
+![foto-1](../assets/modul10/10-1.png)
 
 ## IPv4 Dasar
 
 Menerapkan filter icmp pada Wireshark[cite: 1]. Filter ini menampilkan rangkaian paket Echo Request yang dikirim oleh host dan paket Time-to-live exceeded yang dikirim kembali oleh router perantara[cite: 1].
 
-![foto-1](../assets/image/modul10/10-2.png)
+![foto-1](../assets/modul10/10-2.png)
 Pada gambar di atas, terlihat bahwa laptop mengirimkan Echo Request dengan nilai TTL=1[cite: 1]. Hal ini dilakukan agar paket kadaluwarsa tepat di router pertama, sehingga memicu router tersebut untuk mengirimkan respon identitasnya[cite: 1].
 
-![foto-1](../assets/image/modul10/10-3.png)
+![foto-1](../assets/modul10/10-3.png)
 Pada gambar di atas, terdeteksi balasan dari router dengan IP 192.168.100.1[cite: 1]. Paket ini memiliki protokol ICMP dengan Type: 11 (Time-to-live exceeded), yang mengonfirmasi bahwa router tersebut telah membuang paket No. 25 dan melaporkan keberadaannya kembali ke host pengirim[cite: 1].
 
-![foto-1](../assets/image/modul10/10-4.png)
+![foto-1](../assets/modul10/10-4.png)
 Untuk memetakan rute selanjutnya, laptop otomatis menaikkan nilai TTL menjadi 2 seperti pada gambar di atas[cite: 1]. Dengan TTL=2, paket dapat melewati hop pertama dan mencapai hop kedua (10.122.x.x), yang kemudian memberikan respon serupa untuk mengidentifikasi rute berikutnya[cite: 1].
 
 

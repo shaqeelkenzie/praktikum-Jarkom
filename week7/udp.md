@@ -1,7 +1,7 @@
 # Program Socket dengan UDP
 # Client
 1. Import dan Inisialisasi
-![foto-1](../assets/image/modul7/7-4.png)
+![foto-1](../assets/modul7/7-4.png)
 
 Bagian ini adalah tahap persiapan agar program bisa berkomunikasi lewat jaringan.
 
@@ -21,7 +21,7 @@ Bagian ini adalah tahap persiapan agar program bisa berkomunikasi lewat jaringan
 
 1. Perulangan Utama dan Pengiriman Pesan
 
-![foto-1](../assets/image/modul7/7-5.png)
+![foto-1](../assets/modul7/7-5.png)
 
 Bagian ini mengatur logika interaksi pengguna dan cara pengiriman datanya.
 
@@ -39,7 +39,7 @@ Bagian ini mengatur logika interaksi pengguna dan cara pengiriman datanya.
 
 1. Penerimaan Balasan dari Server
 
-![foto-1](../assets/image/modul7/7-6.png)
+![foto-1](../assets/modul7/7-6.png)
 
 Setelah mengirim pesan, client menunggu jawaban kembali dari server.
 
@@ -55,7 +55,7 @@ Setelah mengirim pesan, client menunggu jawaban kembali dari server.
 
 1. Menghubungkan (Bind)
 
-![foto-1](../assets/image/modul7/7-7.png)
+![foto-1](../assets/modul7/7-7.png)
 
 Bagian bind adalah proses mengalokasikan port spesifik untuk program ini.
 
@@ -69,7 +69,7 @@ Bagian bind adalah proses mengalokasikan port spesifik untuk program ini.
 
 1. Perulangan Utama (Logika Pengolahan Pesan)
 
-![foto-1](../assets/image/modul7/7-8.png)
+![foto-1](../assets/modul7/7-8.png)
 
 Ini adalah "jantung" dari server yang membuatnya terus aktif menunggu kiriman data.
 
@@ -89,4 +89,4 @@ Ini adalah "jantung" dari server yang membuatnya terus aktif menunggu kiriman da
 
 # Output
 
-![foto-1](../assets/image/modul7/7-9.png)
+![foto-1](../assets/modul7/7-9.png)

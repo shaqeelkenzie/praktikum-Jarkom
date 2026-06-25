@@ -24,7 +24,7 @@ paket kedua). Jelaskan hubungan antara nomor port pada kedua paket tersebut!
 - Destination Port
 - Length
 - Checksum
-![foto-1](../assets/image/modul5/5-1.png)
+![foto-1](../assets/modul5/5-1.png)
 
 
 ---
@@ -34,12 +34,12 @@ paket kedua). Jelaskan hubungan antara nomor port pada kedua paket tersebut!
 - Destination Port: 2 byte
 - Length: 2 byte
 - Checksum: 2 byte
-![foto-1](../assets/image/modul5/5-2.png)
+![foto-1](../assets/modul5/5-2.png)
 
 ---
 
 3. Nilai yang tertera pada "Length" menyatakan panjang total dari header UDP dan payload (data) yang dikirimkan dalam paket tersebut. Dalam contoh ini, nilai "Length" adalah 58 byte, yang berarti bahwa header UDP (8 byte) dan payload (50 byte) bersama-sama memiliki panjang total 58 byte.
-![foto-1](../assets/image/modul5/5-3.png)
+![foto-1](../assets/modul5/5-3.png)
 
 ---
 
@@ -56,7 +56,7 @@ Max Payload = 65.535 - 8
 Max Payload = 65.527 byte
 
 Jadi payload UDP maksimal adalah 65.527 byte ≈ 64 KB
-![foto-1](../assets/image/modul5/5-4.png)
+![foto-1](../assets/modul5/5-4.png)
 
 ---
 
@@ -65,10 +65,10 @@ Jadi payload UDP maksimal adalah 65.527 byte ≈ 64 KB
 ---
 
 1. Nomor protokol untuk UDP adalah 17 dalam notasi desimal dan 0x11 dalam notasi heksadesimal. Anda dapat melihat nomor protokol ini pada bagian "Protocol" pada datagram IP yang mengandung segmen UDP.
-![foto-1](../assets/image/modul5/5-5.png)
+![foto-1](../assets/modul5/5-5.png)
 
 ---
 
 1. Dalam pasangan paket UDP, nomor port pada paket pertama (yang dikirimkan oleh host Anda) akan menjadi nomor port tujuan pada paket kedua (yang merupakan balasan). Sebaliknya, nomor port tujuan pada paket pertama akan menjadi nomor port sumber pada paket kedua. Hal ini menunjukkan bahwa komunikasi antara dua host menggunakan protokol UDP terjadi melalui pertukaran paket dengan nomor port yang saling terkait.
-![foto-1](../assets/image/modul5/5-6.png)
-![foto-1](../assets/image/modul5/5-7.png)
+![foto-1](../assets/modul5/5-6.png)
+![foto-1](../assets/modul5/5-7.png)

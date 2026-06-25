@@ -1,6 +1,6 @@
 # Program Socket dengan TCP
 # Client
-![foto-1](../assets/image/modul7/7-1.png)
+![foto-1](../assets/modul7/7-1.png)
 
 1. Inisialisasi TCP Socket
 
@@ -24,7 +24,7 @@
 
 # Server
 
-![foto-1](../assets/image/modul7/7-2.png)
+![foto-1](../assets/modul7/7-2.png)
 
 1. Inisialisasi dan Mendengarkan (Listen)
 
@@ -58,4 +58,4 @@
 
 # Output
 
-![foto-1](../assets/image/modul7/7-3.png)
+![foto-1](../assets/modul7/7-3.png)

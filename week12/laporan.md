@@ -21,19 +21,19 @@ ICMP (Internet Control Message Protocol) adalah protokol jaringan yang digunakan
 
 Gunakan perintah `ping -n 10 www.ust.hk` untuk mengecek apakah website atau server `www.ust.hk` dapat dihubungi melalui jaringan internet serta untuk mengetahui kecepatan respons koneksinya.
 
-![foto-1](../assets/image/modul12/12-1.png)
+![foto-1](../assets/modul12/12-1.png)
 
 Berikut tampilan tangkapan paket pada Wireshark:
 
-![foto-1](../assets/image/modul12/12-2.png)
+![foto-1](../assets/modul12/12-2.png)
 
 Berdasarkan tangkapan layar di atas, terdapat 20 paket karena perintah menggunakan `-n 10` yaitu sebagai instruksi khusus agar laptop mengirim paket sebanyak 10 kali. Karena satu paket terdiri dari **request** dan **reply**, maka jumlah total paket dikali dua.
 
-![foto-1](../assets/image/modul12/12-3.png)
+![foto-1](../assets/modul12/12-3.png)
 
 Berdasarkan tangkapan layar di atas (Frame 14), terlihat aktivitas protokol ICMP berupa pesan *Type 8 Code 0* (*Echo ping request*) yang dikirim oleh `192.168.1.211` (host) menuju server tujuan `143.89.209.9` dengan nilai `TTL = 128`. Paket permintaan ini membawa *payload* data sebesar 32 bytes. 
 
-![foto-1](../assets/image/modul12/12-4.png)
+![foto-1](../assets/modul12/12-4.png)
 
 Pada Frame 15, ditangkap paket respons berupa *Type 0 Code 0* (*Echo ping reply*) yang dikirim balik oleh server `143.89.209.9` ke `192.168.1.211` (host). Paket balasan ini merupakan jawaban langsung dari *request* pada Frame 14, dengan waktu respons (*Response time*) terukur sebesar 65.009 ms. Server mengirimkan kembali data yang sama persis sebesar 32 bytes dengan nilai `TTL sisa = 43`, yang membuktikan bahwa paket telah berhasil menempuh perjalanan pulang-pergi melewati beberapa *hop* jaringan internet tanpa mengalami *packet loss*.
 
@@ -48,15 +48,15 @@ Sehingga dapat disimpulkan bahwa proses komunikasi di atas berjalan sukses, yang
 
 Gunakan perintah `tracert www.inria.fr` untuk melacak jalur perjalanan paket data dari komputer pengguna menuju server `www.inria.fr`.
 
-![foto-1](../assets/image/modul12/12-5.png)
+![foto-1](../assets/modul12/12-5.png)
 
 Berikut tampilan tangkapan paket pada Wireshark:
 
-![foto-1](../assets/image/modul12/12-6.png)
+![foto-1](../assets/modul12/12-6.png)
 
 Berdasarkan log paket pada Wireshark, terlihat bahwa perintah `tracert` bekerja dengan menaikkan nilai TTL secara bertahap, dimulai dari `TTL=1` hingga `TTL=7`, untuk melacak jalur menuju IP `128.93.162.83`. Ketika nilai TTL habis, *router* akan mengirim balasan ICMP seperti **Type 11 (Time Exceeded)** atau **Type 3 (Destination Unreachable)** ke host pengirim, sehingga jalur jaringan dapat teridentifikasi secara bertahap.
 
-![foto-1](../assets/image/modul12/12-7.png)
+![foto-1](../assets/modul12/12-7.png)
 
 Tangkapan layar di atas merupakan pesan eror ICMP *Type 11 (Time-to-live exceeded)*. Pesan ini dikirim oleh *router* karena nilai TTL paket telah habis menjadi 0 setelah dikurangi di *hop* tersebut, serta dilampirkannya salinan paket *Echo Request* asli di dalam *payload* sebagai bukti bahwa paket tersebut telah dihancurkan.
 
