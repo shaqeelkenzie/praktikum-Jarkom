@@ -10,15 +10,15 @@ Untuk memulai, langkah pertama yang diperlukan adalah menghapus cache ARP:
 ## Mengamati Aksi ARP
 Langkah pengamatan dilakukan dengan menyalakan Wireshark, memfilter protokol "ARP", dan mengakses URL target untuk mengamati proses pemetaan alamat[cite: 3].
 
-![foto-1](../assets/image/modul13/13-1.png)
+![foto-1](../assets/modul13/13-1.png)
 
 Pilih paket dengan Destination **Broadcast**:
-![foto-1](../assets/image/modul13/13-2.png)
+![foto-1](../assets/modul13/13-2.png)
 
 *   **Analisis ARP Request**: MAC address tujuan bernilai `00:00:00:00:00:00` karena belum diketahui[cite: 3]. Paket dikirim secara broadcast (`ff:ff:ff:ff:ff:ff`) ke seluruh perangkat dalam jaringan lokal untuk mencari host dengan IP `192.168.1.1`[cite: 3].
 
 Pilih paket 12262:
-![foto-1](../assets/image/modul13/13-3.png)
+![foto-1](../assets/modul13/13-3.png)
 
 *   **Analisis ARP Reply**: IP `192.168.1.1` dipetakan dengan MAC address `84:3c:99:9a:ec:8d`[cite: 3]. Balasan ini dikirim langsung kepada host penanya (`192.168.1.5`), mengonfirmasi pemetaan alamat tersebut[cite: 3].
 
