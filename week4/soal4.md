@@ -13,18 +13,18 @@ dalamnya. Apa saja isi yang terkandung dalam setiap jawaban tersebut?
 
 ## Jawaban :
 1. 
-   ![foto-1](../assets/image/modul4/419.png)
-   ![foto-1](../assets/image/modul4/420.png)
+   ![foto-1](../assets/modul4/419.png)
+   ![foto-1](../assets/modul4/420.png)
 Pesan permintaan DNS dikirimkan ke alamat IP 10.221.193.2. Alamat IP tersebut merupakan default alamat IP server DNS lokal saya.
 
 ---
 
 2.
-   ![foto-1](../assets/image/modul4/421.png)
+   ![foto-1](../assets/modul4/421.png)
 Jenis atau type dari pesan tersebut adalah A. Pesan tersebut tidak mengandung jawaban atau answers.
 
 ---
 
 3.
-   ![foto-1](../assets/image/modul4/422.png)
+   ![foto-1](../assets/modul4/422.png)
 Terdapat 1 jawaban.

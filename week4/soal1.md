@@ -16,25 +16,25 @@
 ## Jawaban
 
 1. 
-   ![foto-1](../assets/image/modul4/4-1.png)
-   ![foto-1](../assets/image/modul4/42.png)
+   ![foto-1](../assets/modul4/4-1.png)
+   ![foto-1](../assets/modul4/42.png)
    Pesan tersebut dikirimkan melalui UDP
 
 2.  
-   ![foto-1](../assets/image/modul4/43.png)
-   ![foto-1](../assets/image/modul4/44.png)
+   ![foto-1](../assets/modul4/43.png)
+   ![foto-1](../assets/modul4/44.png)
    Port tujuan pada pesan permintaan DNS adalah 53. Port sumber pada pesan balasannya adalah 53.
 
 3.  
-   ![foto-1](../assets/image/modul4/45.png)
-   ![foto-1](../assets/image/modul4/46.png)
+   ![foto-1](../assets/modul4/45.png)
+   ![foto-1](../assets/modul4/46.png)
 
 4.  
-   ![foto-1](../assets/image/modul4/47.png)
+   ![foto-1](../assets/modul4/47.png)
    Jenis atau type dari pesan tersebut adalah A (Host Address). Pesan permintaan tersebut tidak mengandung jawaban atau answers.
    
 5.  
-   ![foto-1](../assets/image/modul4/48.png)
+   ![foto-1](../assets/modul4/48.png)
    Terdapat 2 Jawaban
 
 7. jawabannya adalah tidak. Host Anda tidak perlu mengirimkan pesan permintaan DNS baru setiap kali ingin mengakses suatu gambar, karena gambar-gambar tersebut biasanya berada di server yang sama dengan halaman web utama, sehingga alamat IP yang diperlukan sudah diketahui dari permintaan DNS sebelumnya.
